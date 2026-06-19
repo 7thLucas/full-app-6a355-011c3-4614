@@ -1,0 +1,58 @@
+<style>
+  .mode-landscape .sl-panels { flex-direction: row; gap: 1.5rem; }
+  .mode-portrait .sl-panels { flex-direction: column; gap: 1rem; }
+  .mode-landscape .sl-panel { flex: 1; }
+  .mode-portrait .sl-panel { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="flex flex-col h-full p-12">
+    <div class="mb-7">
+      <span class="text-xs font-semibold tracking-widest text-indigo-500 uppercase">Problem & Solution</span>
+      <h2 class="text-4xl font-black text-slate-900 mt-1">Why TicTac exists</h2>
+    </div>
+    <div class="sl-panels flex flex-1">
+      <div class="sl-panel bg-slate-900 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-semibold tracking-widest text-slate-400 uppercase mb-4">The Problem</div>
+          <h3 class="text-2xl font-bold text-white mb-3">Classic game, terrible digital experience</h3>
+          <p class="text-slate-300 text-sm leading-relaxed">When you want a quick game with the person right next to you, every digital option is buried under ads, requires an account, or feels like overkill for a 2-minute game. The simple thing shouldn't be this hard.</p>
+        </div>
+        <ul class="space-y-3 mt-6">
+          <li class="flex items-center gap-3 text-slate-300 text-sm">
+            <span class="w-5 h-5 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">✕</span>
+            Ad-cluttered or app-store locked
+          </li>
+          <li class="flex items-center gap-3 text-slate-300 text-sm">
+            <span class="w-5 h-5 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">✕</span>
+            Requires login or download
+          </li>
+          <li class="flex items-center gap-3 text-slate-300 text-sm">
+            <span class="w-5 h-5 rounded-full bg-rose-500 flex-shrink-0 flex items-center justify-center text-white text-xs font-bold">✕</span>
+            No way to track the running score
+          </li>
+        </ul>
+      </div>
+      <div class="sl-panel bg-indigo-600 rounded-2xl p-8 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-semibold tracking-widest text-indigo-200 uppercase mb-4">The Solution</div>
+          <h3 class="text-2xl font-bold text-white mb-3">Open the browser. Start playing.</h3>
+          <p class="text-indigo-100 text-sm leading-relaxed">TicTac loads in under 3 seconds and gets out of the way. No account, no ads, no distractions — just a clean board and a score tracker that keeps up with your rivalry.</p>
+        </div>
+        <ul class="space-y-3 mt-6">
+          <li class="flex items-center gap-3 text-indigo-100 text-sm">
+            <span class="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center text-indigo-600 text-xs font-bold">✓</span>
+            Zero friction — open and play instantly
+          </li>
+          <li class="flex items-center gap-3 text-indigo-100 text-sm">
+            <span class="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center text-indigo-600 text-xs font-bold">✓</span>
+            Score tracker across multiple rounds
+          </li>
+          <li class="flex items-center gap-3 text-indigo-100 text-sm">
+            <span class="w-5 h-5 rounded-full bg-white flex-shrink-0 flex items-center justify-center text-indigo-600 text-xs font-bold">✓</span>
+            Win animations & satisfying feedback
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
