@@ -1,0 +1,42 @@
+<style>
+  .mode-landscape .sl-layout { flex-direction: row; }
+  .mode-portrait .sl-layout { flex-direction: column; }
+  .mode-landscape .sl-content { width: 52%; }
+  .mode-landscape .sl-visual { width: 48%; }
+  .mode-portrait .sl-content { width: 100%; flex: 1; }
+  .mode-portrait .sl-visual { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full p-12">
+    <div class="sl-content flex flex-col justify-center pr-10">
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-10 h-10 bg-indigo-600 rounded-xl flex items-center justify-center">
+          <span class="text-white font-black text-base">✕</span>
+        </div>
+        <span class="text-2xl font-black text-slate-900 tracking-tight">TicTac</span>
+      </div>
+      <h1 class="text-5xl font-black text-slate-900 leading-tight mb-5">
+        Classic game.<br/>
+        <span class="text-indigo-600">Modern feel.</span>
+      </h1>
+      <p class="text-lg text-slate-500 leading-relaxed max-w-sm mb-8">
+        A beautifully crafted Tic Tac Toe experience — two players, one board, zero friction. Open and play in under 3 seconds.
+      </p>
+      <div class="flex items-center gap-3 flex-wrap">
+        <span class="bg-indigo-50 text-indigo-700 text-sm font-semibold px-4 py-2 rounded-full">2-Player Local</span>
+        <span class="bg-rose-50 text-rose-600 text-sm font-semibold px-4 py-2 rounded-full">No Login Needed</span>
+        <span class="bg-amber-50 text-amber-700 text-sm font-semibold px-4 py-2 rounded-full">Score Tracker</span>
+      </div>
+      <div class="mt-10">
+        <data-attribution />
+      </div>
+    </div>
+    <div class="sl-visual flex items-center justify-center">
+      <img
+        src="http://localhost:8001/common/image-generation?prompt=modern%20tic%20tac%20toe%20game%20board%2C%20indigo%20X%20marks%20and%20rose%20pink%20O%20circles%2C%20clean%20minimal%20flat%20illustration%2C%20soft%20drop%20shadow%2C%20white%20background%2C%20bold%20graphic%20design%20style"
+        alt="TicTac game board"
+        class="rounded-3xl shadow-2xl w-full h-full object-cover"
+      />
+    </div>
+  </div>
+</section>
